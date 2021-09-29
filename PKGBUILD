@@ -4,7 +4,7 @@
 
 pkgbase=gdm-prime
 pkgname=(gdm-prime libgdm-prime)
-pkgver=3.38.2
+pkgver=40.0
 pkgrel=1
 url="https://wiki.gnome.org/Projects/GDM"
 arch=(x86_64)
@@ -13,7 +13,7 @@ depends=(gnome-shell gnome-session upower xorg-xrdb xorg-server xorg-xhost
          libxdmcp systemd)
 makedepends=(yelp-tools gobject-introspection git docbook-xsl meson)
 checkdepends=(check)
-_commit=840d027559760b1cd48aa0175ffe8a15e66a9234  # tags/3.38.2^0
+_commit=3246bf1af8589899621649df523e6840e4858cda  # tags/40.0
 source=("git+https://gitlab.gnome.org/GNOME/gdm.git#commit=$_commit"
         0001-Xsession-Don-t-start-ssh-agent-by-default.patch
         0002-pam-arch-Update-to-match-pambase-20200721.1-2.patch
@@ -24,6 +24,7 @@ sha256sums=('SKIP'
             'd5cd6a401db2aa19374d477817420a39759044393bd420414fdc41881fd93597'
             'a1fb80c69454492390e4b7edac0efe55b2178c7031051d3eab99ed8c14d3e0e4'
             'e88410bcec9e2c7a22a319be0b771d1f8d536863a7fc618b6352a09d61327dcb')
+
 
 pkgver() {
   cd gdm

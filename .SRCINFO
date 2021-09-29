@@ -1,5 +1,5 @@
 pkgbase = gdm-prime
-	pkgver = 3.38.2
+	pkgver = 40.0.0
 	pkgrel = 1
 	url = https://wiki.gnome.org/Projects/GDM
 	arch = x86_64
@@ -18,7 +18,7 @@ pkgbase = gdm-prime
 	depends = xorg-xhost
 	depends = libxdmcp
 	depends = systemd
-	source = git+https://gitlab.gnome.org/GNOME/gdm.git#commit=840d027559760b1cd48aa0175ffe8a15e66a9234
+	source = git+https://gitlab.gnome.org/GNOME/gdm.git#commit=3246bf1af8589899621649df523e6840e4858cda
 	source = 0001-Xsession-Don-t-start-ssh-agent-by-default.patch
 	source = 0002-pam-arch-Update-to-match-pambase-20200721.1-2.patch
 	source = 0003-nvidia-prime.patch
