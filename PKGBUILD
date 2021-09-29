@@ -1,6 +1,7 @@
 # Maintainer: Robin Lange <robin dot langenc at gmail dot com>
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
+# Contributor: Simao Gomes Viana (Toowoxx) on behalf of Toowoxx IT GmbH <simao.gomes@toowoxx.de>
 
 pkgbase=gdm-prime
 pkgname=(gdm-prime libgdm-prime)
