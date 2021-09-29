@@ -10,7 +10,6 @@ https://bugs.archlinux.org/task/67485
  data/pam-arch/gdm-fingerprint.pam        | 31 +++++++++++++++---------
  data/pam-arch/gdm-launch-environment.pam | 24 ++++++++++--------
  data/pam-arch/gdm-password.pam           | 17 +++++++------
- data/pam-arch/gdm-pin.pam                | 13 ----------
  data/pam-arch/gdm-smartcard.pam          | 31 +++++++++++++++---------
  7 files changed, 75 insertions(+), 64 deletions(-)
  delete mode 100644 data/pam-arch/gdm-pin.pam
@@ -153,25 +152,6 @@ index 8d34794e..137242a6 100644
 +
 +session    include                     system-local-login
 +session    optional                    pam_gnome_keyring.so auto_start
-diff --git a/data/pam-arch/gdm-pin.pam b/data/pam-arch/gdm-pin.pam
-deleted file mode 100644
-index 135e205e..00000000
---- a/data/pam-arch/gdm-pin.pam
-+++ /dev/null
-@@ -1,13 +0,0 @@
--auth     requisite pam_pin.so
--auth     include   system-local-login
--auth     optional  pam_gnome_keyring.so
--
--account  include   system-local-login
--
--password include   system-local-login
--password optional  pam_pin.so
--password optional  pam_gnome_keyring.so use_authtok
--
--session  optional  pam_keyinit.so force revoke
--session  include   system-local-login
--session  optional  pam_gnome_keyring.so auto_start
 diff --git a/data/pam-arch/gdm-smartcard.pam b/data/pam-arch/gdm-smartcard.pam
 index ec6f75d5..e6ec1299 100644
 --- a/data/pam-arch/gdm-smartcard.pam
